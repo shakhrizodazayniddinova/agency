@@ -9,7 +9,7 @@ export default function Types() {
     <Root>
         <TypesBox>
             {TypesBtnsData.map((item, index) => (
-                <Button variant='outlined' className={active === index && 'active'} onClick={() => setActive(index)}>{item}</Button>
+                <Button variant='outlined' key={index} className={active === index && 'active'} onClick={() => setActive(index)}>{item}</Button>
             ))}
         </TypesBox>
     </Root>

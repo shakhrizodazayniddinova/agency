@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { Box, CssBaseline } from '@mui/material';
+import { CssBaseline } from '@mui/material';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Email from '../Email/Email';

@@ -2,6 +2,7 @@ import Head from "next/head";
 import theme from "../styles/theme";
 import { ThemeProvider } from "@mui/material";
 import { useRouter } from "next/router";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 export default function App({ Component, pageProps }) {
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }) {
         <meta name="description" content={`This is the ${routeName} page`} />
       </Head>
       <Component {...pageProps} />
+      <SpeedInsights/>
     </ThemeProvider>
   );
 }

@@ -35,8 +35,8 @@ export default function Hero() {
       <Fade>
         <CategoryBox>
           <Grid container rowGap={2}>
-            {HeroData.map((item) => (
-              <Grid item xs={12} md={3} sm={6}>
+            {HeroData.map((item, index) => (
+              <Grid item xs={12} md={3} sm={6} key={index}>
                 <CategoryChildBox>
                   <CategoryIconBox sx={{bgcolor: item.bgcolor}}>
                     <img src={item.img} alt="img1" width={'41px'}/>
